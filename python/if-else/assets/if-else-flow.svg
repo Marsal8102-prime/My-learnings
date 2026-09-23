@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Python if-else decision flow</title>
+  <desc id="desc">A flowchart showing how Python chooses between if, elif, and else blocks.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+    <style>
+      .box { stroke:#334155; stroke-width:2; rx:14; }
+      .label { font:600 20px Arial, sans-serif; fill:#0f172a; text-anchor:middle; }
+      .note { font:16px Arial, sans-serif; fill:#334155; text-anchor:middle; }
+      .line { stroke:#334155; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+      .tag { font:700 16px Arial, sans-serif; fill:#475569; }
+    </style>
+  </defs>
+  <rect width="900" height="650" fill="#f8fafc"/>
+  <text x="450" y="42" class="label" font-size="25">How an if / elif / else chain runs</text>
+
+  <rect x="340" y="70" width="220" height="62" class="box" fill="#dbeafe"/>
+  <text x="450" y="108" class="label">Start</text>
+  <path d="M450 132 V165" class="line"/>
+
+  <path d="M450 165 L590 230 L450 295 L310 230 Z" class="box" fill="#fef3c7"/>
+  <text x="450" y="225" class="label">if condition</text>
+  <text x="450" y="250" class="note">is True?</text>
+
+  <path d="M590 230 H710 V310" class="line"/>
+  <text x="630" y="218" class="tag">Yes</text>
+  <rect x="610" y="310" width="200" height="68" class="box" fill="#dcfce7"/>
+  <text x="710" y="342" class="label">Run if block</text>
+  <text x="710" y="363" class="note">then continue</text>
+
+  <path d="M450 295 V335" class="line"/>
+  <text x="462" y="320" class="tag">No</text>
+  <path d="M450 335 L590 400 L450 465 L310 400 Z" class="box" fill="#fef3c7"/>
+  <text x="450" y="395" class="label">elif condition</text>
+  <text x="450" y="420" class="note">is True?</text>
+
+  <path d="M590 400 H710 V480" class="line"/>
+  <text x="630" y="388" class="tag">Yes</text>
+  <rect x="610" y="480" width="200" height="68" class="box" fill="#dcfce7"/>
+  <text x="710" y="522" class="label">Run elif block</text>
+
+  <path d="M450 465 V500" class="line"/>
+  <text x="462" y="490" class="tag">No</text>
+  <rect x="340" y="500" width="220" height="68" class="box" fill="#fee2e2"/>
+  <text x="450" y="542" class="label">Run else block</text>
+  <path d="M450 568 V605" class="line"/>
+  <rect x="380" y="605" width="140" height="34" class="box" fill="#e2e8f0"/>
+  <text x="450" y="629" class="label" font-size="16">Continue</text>
+</svg>
