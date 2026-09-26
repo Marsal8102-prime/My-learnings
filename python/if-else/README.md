@@ -1,4 +1,4 @@
-# Python If-Else - HackerRank Practice
+# Python If-Else
 
 `if`, `elif`, and `else` let a Python program make decisions. Python evaluates conditions from top to bottom, runs the first matching block, and then skips the rest of that chain.
 
