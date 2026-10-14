@@ -31,6 +31,37 @@ flowchart TD
     F --> G
 ```
 
+## Nested Lists
+
+A nested list is a list that contains other lists. It is helpful for representing grouped data, such as rows in a table or a simple grid.
+
+```python
+students = [
+    ["Asha", 90],
+    ["Ravi", 85],
+    ["Meera", 95],
+]
+
+print(students[0])     # ['Asha', 90]
+print(students[0][0])  # Asha
+```
+
+Use nested `for` loops to work through each item in every inner list:
+
+```python
+for student in students:
+    for value in student:
+        print(value)
+```
+
+Nested lists can also be created with a nested list comprehension:
+
+```python
+matrix = [[row * 3 + column for column in range(3)] for row in range(3)]
+
+print(matrix)  # [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+```
+
 ## List Comprehensions: `if` and `if/else` in One Line
 
 List comprehensions offer a compact way to create a list while applying conditional logic. They are useful for simple transformations, but a normal `if`/`else` block is often clearer when the logic becomes complex.
