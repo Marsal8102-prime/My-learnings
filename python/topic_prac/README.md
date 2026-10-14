@@ -84,7 +84,7 @@ labels = ["even" if number % 2 == 0 else "odd" for number in numbers]
 print(labels)  # ['odd', 'even', 'odd', 'even']
 ```
 
-The conditional expression reads like a small `if`/`else` statement:
+The conditional expression reads like a small `if`/`else` statement
 
 ```python
 result = "even" if number % 2 == 0 else "odd"
